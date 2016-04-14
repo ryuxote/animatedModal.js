@@ -38,7 +38,7 @@
 
         }, options);
         
-        var closeBt = $('.close-'+settings.modalTarget);
+        var closeBt = '.close-'+settings.modalTarget;
 
         //console.log(closeBt)
 
@@ -90,7 +90,7 @@
 
 
 
-        closeBt.click(function(event) {
+        $(document).on('click', closeBt, function(event) {
             event.preventDefault();
             $('body, html').css({'overflow':'auto'});
 
